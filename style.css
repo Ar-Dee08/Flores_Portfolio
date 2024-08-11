@@ -112,13 +112,13 @@ button:hover {
     position: relative;
     bottom: 0;
     left: 50%;
-    transform: translateX(-55%); /* Center horizontally */
+    transform: translateX(-55%);
     padding: 20px;
     background: rgba(0, 0, 0, 0.6);
-    border-radius: 10px; /* Optional: rounded corners */
+    border-radius: 10px;
     transition: opacity 0.4s ease-in-out;
-    max-width: 90%; /* Ensure it doesn't stretch too wide */
-    margin: 0 auto; /* Center vertically in case of content overflow */
+    max-width: 90%; 
+    margin: 0 auto; 
 }
 
 .hero-content h1 {
@@ -552,7 +552,14 @@ footer p {
         width: 50px; 
         height: 50px; 
     }
-
+ @media (min-width: 768px) and (max-width: 1024px) {
+        .about-content, .resume {
+            margin: 0 auto;
+            padding: 0;
+            width: 100%;
+            max-width: 800px;
+        }
+    }
 
 /* Responsive styling for tablets (portrait mode) */
 @media (max-width: 768px) {
